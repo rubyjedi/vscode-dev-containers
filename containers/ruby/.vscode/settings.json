@@ -1,0 +1,15 @@
+{
+  // For some reason, /bin/bash can't reliably find this path, so we set it here to avoid headaches.
+  "solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
+
+  // solargraph.transport is one of: stdio, socket, or external
+  // If solargraph binary is NOT launched via docker-entrypoint, use "socket" or "stdio".
+  "solargraph.transport": "socket",
+
+  // If solargraph binary is launched via docker-entrypoint.sh, use "external"
+  // "solargraph.transport": "external",
+  // "solargraph.externalServer": {
+  //     "host": "localhost",
+  //     "port": 7658
+  // }
+}

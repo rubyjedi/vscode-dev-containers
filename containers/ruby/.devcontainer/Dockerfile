@@ -11,6 +11,9 @@ RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "source /usr/local/shar
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
+RUN gem install solargraph \
+     && solargraph download-core
+
 # [Optional] Uncomment this line to install additional gems.
 # RUN gem install <your-gem-names-here>
 
